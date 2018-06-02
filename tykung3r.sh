@@ -1,5 +1,6 @@
 #!/bin/bash
 # Coded By Bayz21
+# Deleting Copyright Mean u ngajak gelud >:(
 function ceker() {
     target=$web/$1.$eks;
     cekurl=$(timeout 10 curl -s --write-out %{http_code} -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" --output /dev/null $target);
@@ -25,7 +26,7 @@ cat << "Bayz21"
 Bayz21
 echo -n "Masukan Webnya : " ;
 read web
-echo -n "Masukan list Shell : ";
+echo -n "Masukan list Shell (default=list.txt) :";
 read list
 echo -n "Masukan Ektensi Shell : ";
 read eks
